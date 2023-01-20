@@ -15,7 +15,7 @@ jobs:
     - name: Checkout submodules
       run: | 
         git submodule update --init --recursive
-        ls -al roles/nginx
+        ls -al roles/ansible_role_nginx
     - uses: ncipollo/release-action@v1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
